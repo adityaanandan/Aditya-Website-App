@@ -1,8 +1,10 @@
 import React from 'react'
 
+import { useRef } from 'react'
+
 const Skills = () => {
   return (
-    <div className="h-full lg:pt-4 md:pt-9 lg:h-screen">
+    <div  id = "skills" className="h-full lg:pt-4 md:pt-9 lg:h-screen">
       <div className="flex flex-col items-center justify-center">
       <h1 className="font-poppins text-center text-6xl font-bold">Skills</h1>
     </div>

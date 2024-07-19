@@ -15,32 +15,41 @@ const Projects = () => {
             name: 'AIBAT',
             techStack: ['Next.js', 'Django', 'Docker', 'AWS'],
             image: adatest,
-            description: 'Full-stack web application for evaluating ML models in sentiment analysis. Hosted on AWS EC2 instance with Docker containerization. Used in user studies based out of UW-Madison.'
+            description: 'Full-stack web application for evaluating ML models in sentiment analysis. Hosted on AWS EC2 instance with Docker containerization. Used in user studies based out of UW-Madison.',
+            link: 'https://github.com/landerson02/Adatest-App',
+            github: 'https://github.com/landerson02/Adatest-App',
         },
         {
             name: 'Dunklytics',
             techStack: ['React.js', 'Django', 'Docker', 'GCP'],
             image: dunklytics,
-            description: 'Full-stack web application for analyzing basketball statistics. Utiltized GCP for data storage, and Docker for containerization. Currently public with 100 active users.'
+            description: 'Full-stack web application for analyzing basketball statistics. Utiltized GCP for data storage, and Docker for containerization. Currently public with 100 active users.',
+            link: 'https://dunklytics-app.vercel.app/',
+            github: 'https://github.com/adityaanandan/Dunklytics-App',
+
         },
         {
             name: 'RickBot',
             techStack: ['Django', 'Scikit-learn', 'Transformers'],
             image: rickbot,
-            description: 'Machine Learning model trained to converse like Rick Sanchez from Rick and Morty. Utilizes Transformers and Scikit-learn for NLP tasks. Packaged using Django ORM.'
+            description: 'Machine Learning model trained to converse like Rick Sanchez from Rick and Morty. Utilizes Transformers and Scikit-learn for NLP tasks. Packaged using Django ORM.', 
+            link: 'https://web-production-d232.up.railway.app/',
+            github: 'https://github.com/adityaanandan/RickBot',
         }, 
 
         {
             name: 'Leveling Up',
             techStack: ['Python', 'Java', 'C++', 'Solidity'],
             image: levelingup,
-            description: 'Comprehensive guide to game design and development, with a focus on the technical aspects of game development. Includes tutorials on Python, Java, C++, and Solidity with individual projects for each language and skill.'
+            description: 'Comprehensive guide to game design and development, with a focus on the technical aspects of game development. Includes tutorials on Python, Java, C++, and Solidity with individual projects for each language and skill.', 
+            link: 'https://levelingup.adityaanandan.com/',
+            github: 'https://github.com/adityaanandan/Leveling-Up-Project-Files',
         }
     ];
 
   return (
 
-        <div className="h-full lg:h-screen">
+        <div id = "projects" className="h-full lg:h-screen">
 
         <div className="flex flex-col items-center justify-center pb-4">
             <h1 className="font-poppins text-center text-6xl font-bold">Projects</h1>

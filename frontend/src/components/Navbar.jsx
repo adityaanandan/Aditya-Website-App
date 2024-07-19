@@ -2,7 +2,7 @@ import React from 'react'
 import { Popover, PopoverTrigger, PopoverContent } from "@/components/ui/popover"
 import { Button } from "@/components/ui/button"
 import { NavLink } from 'react-router-dom'
-
+import {Link} from 'react-scroll'
 
 
 const Navbar = () => {
@@ -19,53 +19,77 @@ const Navbar = () => {
         </PopoverTrigger>
         <PopoverContent className="w-[300px] p-6 bg-white shadow-lg rounded-md">
           <div className="grid gap-6 text-3xl font-medium">
-            <NavLink
-              href="#"
+            <Link
+              to="about"
               className="font-poppins flex items-center gap-4 px-2.5 text-muted-foreground hover:text-gray-700 hover:underline-offset-8	hover:underline"
-              
-            >
+              spy={true} 
+      smooth={true} 
+      offset={0} 
+      duration={500}>
+            
               About
-            </NavLink>
-            <NavLink
-              href="#"
+            </Link>
+            <Link
+              to="skills"
               className="font-poppins flex items-center gap-4 px-2.5 text-muted-foreground hover:text-gray-700 hover:underline-offset-8	hover:underline"
-              
+              spy={true} 
+      smooth={true} 
+      offset={0} 
+      duration={500}
             >
               Skills
-            </NavLink>
-            <NavLink
-              href="#"
+            </Link>
+            <Link
+              to="projects"
               className="font-poppins flex items-center gap-4 px-2.5 text-muted-foreground hover:text-gray-700 hover:underline-offset-8	hover:underline"
-              
+              spy={true} 
+      smooth={true} 
+      offset={0} 
+      duration={500}
             >
               Projects
-            </NavLink>
+            </Link>
             
-            <NavLink
-              href="#"
+            <Link
+              to="contact"
               className="font-poppins flex items-center gap-4 px-2.5 text-muted-foreground hover:text-gray-700 hover:underline-offset-8	hover:underline"
-              
+              spy={true} 
+      smooth={true} 
+      offset={0} 
+      duration={500}
             >
               Contact
-            </NavLink>
+            </Link>
           </div>
         </PopoverContent>
       </Popover>
       <div className="hidden space-x-8 lg:flex">
-        <NavLink href="#" className="font-poppins text-3xl font-medium text-black hover:text-gray-700 hover:underline hover:underline-offset-8	" >
+        <Link to="about" className="font-poppins text-3xl font-medium text-black hover:text-gray-700 hover:underline hover:underline-offset-8" spy={true} 
+      smooth={true} 
+      offset={-50} 
+      duration={500}>
           About
-        </NavLink>
-        <NavLink href="#" className="font-poppins text-3xl font-medium text-black hover:text-gray-700 hover:underline hover:underline-offset-8	" >
+        </Link>
+        <Link to="skills" className="font-poppins text-3xl font-medium text-black hover:text-gray-700 hover:underline hover:underline-offset-8	" spy={true} 
+      smooth={true} 
+      offset={-50} 
+      duration={500}>
           Skills
-        </NavLink>
+        </Link>
         
-        <NavLink href="#" className="font-poppins text-3xl font-medium text-black hover:text-gray-700 hover:underline hover:underline-offset-8	" >
+        <Link to="projects" className="font-poppins text-3xl font-medium text-black hover:text-gray-700 hover:underline hover:underline-offset-8	" spy={true} 
+      smooth={true} 
+      offset={-50} 
+      duration={500}>
           Projects
-        </NavLink>
+        </Link>
         
-        <NavLink href="#" className="font-poppins text-3xl font-medium text-black hover:underline-offset-8 hover:underline hover:text-gray-700" >
+        <Link to="contact" className="font-poppins text-3xl font-medium text-black hover:underline-offset-8 hover:underline hover:text-gray-700" spy={true} 
+      smooth={true} 
+      offset={-50} 
+      duration={500}>
           Contact
-        </NavLink>
+        </Link>
       </div>
     </nav>
     </>

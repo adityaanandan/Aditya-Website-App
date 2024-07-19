@@ -4,7 +4,7 @@ import aura from '../assets/aditya_aura.jpg'
 const About = () => {
 return (
 
-<div className="h-full md:h-screen">
+<div id = "about" className="h-full md:h-screen">
     <div className="flex flex-col items-center justify-center">
       <h1 className="font-poppins text-center text-6xl font-bold">About Me</h1>
     </div>
