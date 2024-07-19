@@ -5,15 +5,15 @@ import { Link } from 'react-scroll';
 
 const Expo = () => {
 return (
-    <div className="bg-white flex flex-col lg:flex-row h-dvh items-center lg:items-start lg:justify-start p-4">
-      <div className="rounded-full overflow-hidden md:w-96 md:h-96 w-64 h-64 lg:w-128 lg:h-128 mb-4 lg:mb-0 lg:mr-4 lg:ml-96 lg:mt-32">
+    <div className="bg-white flex flex-col lg:flex-row h-dvh items-center lg:justify-center lg:justify-start p-4">
+      <div className="rounded-full overflow-hidden md:w-96 md:h-96 w-64 h-64 mb-4 lg:mb-0 lg:mr-4 lg: ">
         <img 
           src={aditya_pic} 
           alt="Aditya Anandan" 
           className="w-full h-full object-cover"
         />
       </div>
-      <div className="text-center text-center lg:mt-48 lg:ml-8">
+      <div className="text-center text-center  lg:ml-8">
         <p className = "text-xl text-gray-600 font-poppins font-bold mb-4">Hello! 👋 I'm</p>
         <h1 className="text-3xl md:text-4xl lg:text-6xl lg:mb-4 font-bold font-poppins">Aditya</h1>
         <p className="text-lg md:text-xl lg:text-4xl text-gray-600 font-bold font-poppins">Developer, Musician, & Student</p>

@@ -49,14 +49,14 @@ const Projects = () => {
 
   return (
 
-        <div id = "projects" className="h-full lg:h-screen">
+        <div id = "projects" className="h-full mt-64">
 
         <div className="flex flex-col items-center justify-center pb-4">
             <h1 className="font-poppins text-center text-6xl font-bold">Projects</h1>
         </div>
         <div className="justify-center w-4/5 sm:w-3/5 lg:w-2/5 mx-auto">
         <p className = "text-center font-poppins text-xl">
-            Here are some of my projects over the years. Some of my technical interests lie in the intersections of AI, ML, and Web Development. I'm also interested in building SAAS applications that can improve the world around me. I'm always open to working on new and interesting things so feel free to contact me with any ideas!
+            Here are some of my projects over the years. Some of my technical interests lie in the intersections of AI, ML, and Web Development. I'm always open to working on new and interesting things so feel free to contact me with any ideas!
         </p>
         </div>
         
